@@ -112,7 +112,7 @@ span{
 .Skills-text ul {
     list-style-type: none;
     padding: 0;
-    margin: 0 60px;
+    margin: 0 43px;
 }
 
 .Skills-text li {
@@ -121,7 +121,7 @@ span{
 
 .WorkExperience-text .job {
     margin-top: 20px;
-    margin: 0 57px
+    margin: 0 43px
 }
 
 .WorkExperience-text .job h3 {
@@ -144,6 +144,63 @@ span{
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
+}
+/* Apply a basic reset for styling consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.form-text {
+    max-width: 400px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+input {
+    margin-bottom: 12px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+/* Existing CSS styles */
+
+textarea {
+    margin-bottom: 12px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical; /* Allow vertical resizing of the textarea */
+    min-height: 100px; /* Set a minimum height to avoid the textarea collapsing */
+}
+
+input[type="submit"] {
+    background-color: #4caf50;
+    color: #fff;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
 }
 
 

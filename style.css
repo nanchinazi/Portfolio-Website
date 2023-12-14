@@ -1,11 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;600&family=Montserrat:wght@500&family=Raleway:wght@600&display=swap');
 
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
-   
 }
 .nav-bar{
     display: flex;
@@ -46,7 +50,7 @@ body{
     width: 350px;
     height: 350px;
     border-radius: 11200em;
-    margin-top: 1em;
+    margin-top: 0.1em;
  }
 .home-content{
     color: aliceblue;
@@ -76,16 +80,16 @@ span{
 }
 
 
-.Education-text{
+.Education-text {
     display: flex;
     padding: 0 30px;
     margin: 0 60px;
-    margin-top: 1em;
-    
+    margin-top: 1em; 
+   
 }
+
 .resume-header > h1{
     text-align: center;
-    
 }
 .school{
     margin: 0 100px;
@@ -142,12 +146,6 @@ span{
     font-size: 30px;
 }
 
-/* Reset some default styles */
-body, h1, h2, p {
-    margin: 0;
-    padding: 0;
-}
-
 /* Apply styles to the section */
 .services {
     background-color: #292c35;
@@ -189,9 +187,50 @@ body, h1, h2, p {
     font-size: 1em;
 }
 
-/* Apply a basic reset for styling consistency */
 
-.form-text {
+
+.container{/* This container includes the h1, p tag and form */
+    display: flex;
+}
+/*.column {
+    width: 30%;
+    padding: 20px;
+    /*background-color: #f4f4f4;
+    margin-top: -490px;
+    margin-left: 310px;
+}*/
+
+.column >h2 {
+    font-size: 16px;
+    margin-left: 400px;
+}
+.column > p {
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 400px;
+}
+
+/* Responsive styles: Adjust the layout for smaller screens.This is for the column and h1 and p tag */
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .column > h2,
+    .column > p {
+        margin-left: 0; /* Adjust margin for smaller screens */
+    }
+
+    /* Add any additional styles for smaller screens here */
+}
+
+.column{
+    background-color: #e09145;
+    flex: 1;
+    padding: 10px;
+    border: 1px solid white;
+}
+/*.column {
     max-width: 550px;
     margin: 20px auto;
     background-color: #fff;
@@ -200,7 +239,7 @@ body, h1, h2, p {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-right: 500px;
    
-}
+}*/
 
 form {
     display: flex;
@@ -240,32 +279,9 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: #45a049;
 }
-
-aside {
-    width: 30%;
-    padding: 20px;
-    /*background-color: #f4f4f4;*/
-    margin-top: -490px;
-    margin-left: 310px;
-}
-.about >h2{
-    font-size: 16px;
-}
-.about > p {
-    font-size: 30px;
-    font-weight: bold;
-   
-}
-/* Responsive styles: Adjust the layout for smaller screens */
-@media (max-width: 600px) {
+/* Form Media query for smaller screens 
+@media screen and (max-width: 768px) {
     .container {
-        flex-direction: column;
+        margin-right: 100px; /* Adjust the right margin for smaller screens 
     }
-
-    aside {
-        width: 100%;
-        margin-top: 20px;
-    }
-}
-
-
+}*/

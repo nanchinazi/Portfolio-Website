@@ -78,7 +78,29 @@ body{
 span{
     color:#e09145;
 }
+/* Media query for smaller screens */
+@media only screen and (max-width: 768px) {
+    .Home-img {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items */
+        width: 100%; /* Take up full width */
+    }
 
+    .Home-img > img {
+        width: 100%; /* Take up full width */
+        height: auto; /* Maintain aspect ratio */
+        border-radius: 0; /* Remove border-radius */
+        margin-top: 1em; /* Add spacing between items */
+    }
+
+    .home-content {
+        width: 80%; /* Take up full width */
+    }
+    .home-content > a > button{
+        margin-bottom: 15px;
+    }
+    /* Add more styles for smaller screens as needed */
+}
 
 .Education-text {
     display: flex;
@@ -158,7 +180,20 @@ span{
     justify-content: space-around;
     align-items: center;
 }
-
+.about {
+    /* margin: 0 120px; */
+    background-color: #e09145;
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+    width: 100%;
+    /* margin: 1rem auto 0 auto; */
+}
+ 
+.about img{
+    height: 250px;
+    border-radius: 29% 71% 45% 55% / 62% 30% 70% 38%  /* Adjust the values as needed */
+}
 /* Style each card */
 .card {
     background-color: #fff;
@@ -186,8 +221,6 @@ span{
     color: #666;
     font-size: 1em;
 }
-
-
 
 .container{/* This container includes the h1, p tag and form */
     display: flex;
@@ -225,7 +258,7 @@ span{
 }
 
 .column{
-    background-color: #e09145;
+    /* background-color: #e09145; */
     flex: 1;
     padding: 10px;
     border: 1px solid white;

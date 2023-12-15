@@ -192,7 +192,10 @@ span{
  
 .about img{
     height: 250px;
-    border-radius: 29% 71% 45% 55% / 62% 30% 70% 38%  /* Adjust the values as needed */
+    border-radius: 29% 71% 45% 55% / 62% 30% 70% 38%; /* Adjust the values as needed */
+}
+.about-text{
+    margin-left: 89px;
 }
 /* Style each card */
 .card {
@@ -221,7 +224,19 @@ span{
     color: #666;
     font-size: 1em;
 }
+/* Card Media query for screens smaller than 768 pixels */
+@media only screen and (max-width: 768px) {
+    .our-services {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
+    .card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
 .container{/* This container includes the h1, p tag and form */
     display: flex;
 }
@@ -312,9 +327,3 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: #45a049;
 }
-/* Form Media query for smaller screens 
-@media screen and (max-width: 768px) {
-    .container {
-        margin-right: 100px; /* Adjust the right margin for smaller screens 
-    }
-}*/

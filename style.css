@@ -82,11 +82,14 @@ body{
     background-color: #292c35;
     min-height: 40vh;
 }
- .Home-img{/* note: this class includes the image, h1 and p */
+ .Home-img {/* note: this class includes the image, h1 and p */
     display: flex;
     justify-content: space-between;
     width: 80%;
     margin: auto;
+ }
+ .profile {
+    margin-left: 200px;
  }
  .Home-img img{
     width: 350px;
@@ -99,6 +102,7 @@ body{
     color: aliceblue;
     width: 50%;
     margin-top: 2em;
+    margin-left: 20px;
 }  
 .home-content > h1{
     font-size: 2rem;
@@ -122,6 +126,8 @@ body{
 span{
     color:#e09145;
 }
+
+
 /* Home Media query for smaller screens */
 @media only screen and (max-width: 768px) {
     .Home-img {
@@ -143,9 +149,13 @@ span{
     .home-content > a > button{
         margin-bottom: 15px;
     }
-   
-    /* Add more styles for smaller screens as needed */
+    .profile {
+        margin-left: 0px !important;
+        margin-top: 20px;
+    }
+
 }
+
 
 .Education-text {
     display: flex;
@@ -213,6 +223,8 @@ span{
     margin-bottom: 60px;
     font-size: 30px;
 }
+
+
 /* Resume Media query for small screens, e.g., phones */
 @media only screen and (max-width: 767px) {
     .Education-text {
@@ -272,30 +284,38 @@ span{
     align-items: center;
 }
 .about {
-    /* margin: 0 120px; */
-    background-color: #e09145;
+    background-color: #292c35;
     display: flex;
     justify-content: space-around;
     padding: 40px;
     width: 100%;
-    /* margin: 1rem auto 0 auto; */
-}
- 
-/* Default styles for the about section */
-.about img {
-    height: 250px;
-    border-radius: 29% 71% 45% 55% / 62% 30% 70% 38%; /* Adjust the values as needed */
-    transition: transform 0.3s ease; /* Add a smooth transition effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+   
 }
 
-/* Hover effect for the about image */
-.about img:hover {
-    transform: scale(1.1); /* Increase the size on hover (adjust the scale factor as needed) */
+.about-text {
+    max-width: 600px; /* Adjust the maximum width of the text container */
+    margin-left: 200px;
+    margin-top: 100px;
 }
 
-.about-text{
-    margin-left: 89px;
+.about h1 {
+    color: white; /* Set the color of the heading */
+    margin-bottom: 20px;
 }
+
+.about p {
+    color: white; /* Set the color of the paragraph text */
+}
+
+.about-img img {
+    max-width: 100%; /* Ensure the image doesn't exceed its container */
+    border-radius: 8px; /* Add border-radius for rounded corners if desired */
+    width: 300px;
+    margin-right: 300px;
+  
+}
+
 
 /* About Media query for small screens, e.g., phones */
 @media only screen and (max-width: 767px) {
@@ -308,7 +328,8 @@ span{
     .about img {
         height: auto; /* Allow the image to resize proportionally */
         max-width: 100%; /* Ensure the image doesn't overflow its container */
-        margin-top: 20px; /* Add space between image and text on small screens */
+        margin-top: 20px; /* Add space between image and text on small screens */ 
+        margin-right: 0;
     }
 
     .about-text {
@@ -451,7 +472,6 @@ input[type="submit"]:hover {
 .footer {
     display: flex;
     background-color: #292c35;
-    background-color: #333;
     padding: 50px 15%;
     color: white;
 }
@@ -502,6 +522,7 @@ input[type="submit"]:hover {
     cursor: pointer;
     color: white;
 }
+
 /* Media Query for Small Screens */
 @media screen and (max-width: 768px) {
     .footer {

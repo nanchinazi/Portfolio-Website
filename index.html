@@ -13,7 +13,7 @@
     <nav class="nav-bar">
         <div class="nav-head">
             <div class="logo">
-            <h1>MWABONJE</h1>
+            <h1>MWA<span>BONJE</span></h1>
          </div>
             <!-- <button class="material-symbols-outlined">
                 menu
@@ -22,8 +22,8 @@
         <div class="nav-links">
             <ul class="links">
                 <li><a href="index.html">Home</a></li> 
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="#About">About</a></li>
+                <li><a href="skill-set">Skills</a></li>
+                <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
@@ -31,7 +31,7 @@
         
     </nav>
 
-    <section class="home">
+    <section id="home" class="home">
         <div class="Home-img">
             <div class="profile">
             <img src="/img/profile.jpg" alt="profile-Picture">
@@ -43,7 +43,42 @@
             </div>
         </div>
     </section>
-
+    <div class="skill-set">
+        <h1>Skill-Set</h1>
+        <div class="underline"></div>
+    </div>
+        
+    
+    <section id="skills" class="skills">
+        <div class="skill-card">
+            <img src="/img/github.png" alt="">
+            <h2>Git version control</h2> 
+            <!-- Description will go here -->
+            <p>Skilled in Git for efficient code management and collaboration.</p> 
+         </div> 
+         <!-- End of Skill Card -->
+         <div class="skill-card">
+            <img src="/img/coding.png" alt="">
+            <h2>Web-Development</h2> 
+            <!-- Description will go here -->
+            <p>Proficient in HTML, CSS, and JavaScript for creating visually appealing, responsive websites.</p> 
+         </div> 
+         <div class="skill-card">
+            <img src="/img/dslr-camera.png" alt="">
+            <h2>Photography</h2> 
+            <!-- Description will go here -->
+            <p>Passionate photographer with expertise in various styles and post-processing.</p> 
+         </div> 
+         <div class="skill-card">
+            <img src="/img/freelance-work.png" alt="">
+            <h2>Freelancing</h2> 
+            <!-- Description will go here -->
+            <p>Experienced freelancer with strong communication skills, delivering quality results on time.</p> 
+         </div> 
+         <!-- Add more skill cards as needed -->
+    
+    </section>
+<!-- 
     <section class="resume">
         <div class="resume-header">
             <h1>Resume</h1>
@@ -65,7 +100,7 @@
                 <li>Bootstrap</li>
                 <li>WordPress</li>
                 <li>MySQL</li>
-                <!-- Add more skills as needed -->
+                
             </ul>
         </div>
 
@@ -75,44 +110,53 @@
                 <h3>Web Developer at Power Learn Project</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
-            <!-- Add more work experiences as needed -->
+            
         </div>
-    </section>
-    <section class="about">
+    </section> -->
+    <section id="about" class="about">
         <div class="about-text">
             <h1>About <span>Me</span></h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem quaerat consequuntur nobis, laboriosam, doloremque, consectetur temporibus alias iste quae eveniet cum? Nisi ullam reprehenderit blanditiis velit nihil expedita ipsam facilis?</p>
+            <p>Freelance web designer and developer with over 2 years of experience, passionate about the synergy of code and design. Proficient in Git for collaborative workflows, I specialize in creating visually appealing websites using HTML, CSS, and JavaScript. Beyond coding, I'm a photographer with an eye for composition and aesthetics. As a seasoned freelancer, I excel in managing projects independently, balancing creativity with professionalism.</p>
+           <div class="my-name">
+                <h3><span>Michael M. Ringa </span></h3>
+           </div>
+            
+            <div class="explore">
+                 <a href="https://mwabonje.carrd.co/"><button>Explore</button></a>
+            </div>
         </div>
         <div class="about-img">
             <img src="/img/DSC_0354.jpg" alt="profile">
         </div>
     </section>
-    <section class="text">
-        <h1>My Projects</h1>
-    </section>
-    <section class="services">
-        <div class="our-services">
-            <article class="card">
-                <h2 class="title">Plan</h2>
-                <div class="content">What do you want to build? Research applications you like.Take notes.Make a plan</div>
-            </article>
-            <article class="card">
-                <h2 class="title">Design</h2>
-                <div class="content">How will you interact with your app? Sketch it out. Put a button somewhere.Adjust the colors.</div>
-            </article>
-            <article class="card">
-                <h2 class="title">Code</h2>
-                <div class="content">How do you code a button? How do you make it blue? Start building.Learn along the way</div>
-            </article>
+    <section class="my-intrests">
+        <div>
+            <h1>Inter<span>e</span>sts</h1>
         </div>
+   <div class="my-intrests-icons">
+        <div class="code">
+            <img src="/img/code.png" alt="">
+        </div>
+        <div class="travel">
+            <img src="/img/travel.png" alt="">
+        </div>
+        <div class="coffee-cup">
+            <img src="/img/coffee-cup.png" alt="">
+        </div>
+        <div class="photo-camera">
+            <img src="/img/photo_camera.png" alt="">
+        </div>
+   </div>
     </section>
+    
     <div class="container">
         <div class="column">
             <h2>GET IN TOUCH</h2>
             <p>let's Discuss Your Project.</p>
         </div>
         <div class="column">
-            <form action="/submit_form" class="" method="post">
+            <form action="https://formspree.io/f/mnqeazjd"
+                        method="POST">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" placeholder="Name"><br>
     
@@ -157,6 +201,7 @@
     </div>
     </div>
 </div>
+<!-- JAVASCRIPT -->
 </body>
 </html>
  

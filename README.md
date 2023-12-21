@@ -28,3 +28,48 @@ Increased number of website visitors and engagement with website content.
 Increased number of inquiries and potential job opportunities generated through the website.
 Improved online presence and visibility in the web design and development community.
 Achievement of website completion within the set timeline and budget.
+
+Planning Phase:
+
+Detailed Project Plan for Personal Portfolio Website
+
+1. Content & Design (Week 1)
+   Subtasks:
+   Finalize website content:
+   Create a list of skills and projects to showcase.
+   Write concise and engaging descriptions for each project.
+   Gather high-quality visuals (screenshots, images).
+   Craft a compelling bio and introduction.
+   Design website mockups:
+   Choose a theme and color palette.
+   Sketch out the layout for the homepage, project sections, resume, and contact.
+   Define navigation and user flow.
+   Gather feedback:
+   Share mockups with peers and potential clients for feedback.
+   Refine design based on feedback.
+
+2. Development (Week 2)
+   Subtasks:
+   Develop website front-end:
+   Code HTML and CSS for website structure and styling.
+   Implement chosen framework/CMS functionalities.
+   Integrate designed visuals and content.
+   Develop website back-end (optional):
+   Add contact form functionality with email integration.
+   Implement basic analytics tracking (e.g., Google Analytics).
+   Secure the website with appropriate measures.
+
+3. Testing & Deployment (Week 3)
+   Subtasks:
+   Conduct thorough testing across various devices and browsers.
+   Fix any bugs or compatibility issues.
+   Choose a web hosting platform and domain name.
+   Deploy the website to the chosen hosting platform.
+   Test website functionality on live server.
+
+4. Launch & Maintenance (Ongoing)
+   Subtasks:
+   Promote websites through social media, online communities, and professional networks.
+   Monitor website traffic and analytics.
+   Update content and functionalities as needed.
+   Maintain website security and performance.

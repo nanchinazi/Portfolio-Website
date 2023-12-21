@@ -220,10 +220,12 @@ span {
   background-color: #40444f; /* Change to the desired color on hover */
 }
 .skill-card img {
-  width: 20px;
+  width: 30px;
   height: auto;
   border-radius: 50%;
   margin-bottom: 10px; /* Add spacing between the image and text */
+  border: 1px solid white;
+  padding: 5px;
 }
 
 h2 {

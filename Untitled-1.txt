@@ -1,0 +1,27 @@
+/* Media Query for Small Screens */
+@media screen and (max-width: 768px) {
+  .footer {
+    padding: 30px 5%; /* Adjust padding for smaller screens */
+    flex-direction: column; /* Stack columns on top of each other */
+  }
+  .footer-2 input {
+    width: 200px;
+    margin-top: 3px;
+  }
+  .footer div h3 {
+    font-weight: 300;
+    margin-bottom: 1px;
+    letter-spacing: 1px;
+    /* margin-top: 1px; */
+  }
+  .footer-2 button {
+    margin-bottom: 30px;
+  }
+  .col-1 {
+    margin-bottom: 30px;
+  }
+  .social-icons a {
+    margin: 10px;
+    font-size: 15px;
+  }
+}

@@ -37,7 +37,7 @@ body {
   background-color: white;
   margin: 5px 2px;
   transition: all 0.3s linear;
-  text-decoration: none;
+  -webkit-transition: all 0.3s linear;
 }
 
 /* end */
@@ -53,10 +53,7 @@ body {
 
   .nav-links.show {
     display: block; /* Show the navigation links when the button is clicked */
-  }
-  .bar:hover {
-    color: #e09145;
-    transition: all 0.3s linear;
+    transition: all 0.5s ease;
   }
 }
 /* END */
@@ -105,10 +102,11 @@ body {
   }
 
   .links a {
-    margin-left: 17.2rem;
+    /* margin-left: 17.2rem; */
     margin-bottom: 3px;
-    font-size: 13px;
+    font-size: 14px;
     margin-top: 5px;
+    margin: 5px 10px;
   }
 
   .logo {
@@ -633,6 +631,13 @@ input[type="submit"] {
   }
   .col-1 {
     margin-bottom: 30px;
+  }
+  .col-1 a {
+    background-color: none;
+  }
+  .col-1 a:hover {
+    color: #e09145;
+    transition: all 0.5s ease;
   }
   .social-icons a {
     margin: 10px;

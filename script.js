@@ -1,4 +1,15 @@
 function toggleNav() {
-  var navLinks = document.querySelector(".nav-links");
+  const navLinks = document.querySelector(".nav-links");
+  const hamburgerBtn = document.querySelector(".hamburger-btn");
+
+  hamburgerBtn.classList.toggle("active");
+
+  // Smoothly rotate the bars:
+  for (let i = 0; i < hamburgerBtn.children.length; i++) {
+    hamburgerBtn.children[i].style.transform = `rotate(${
+      hamburgerBtn.classList.contains("active") ? "20deg" : "0deg"
+    })`;
+  }
+
   navLinks.classList.toggle("show");
 }

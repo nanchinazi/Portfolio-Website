@@ -193,8 +193,59 @@ span {
   color: #e09145;
 }
 
-/* Home Media query for smaller screens */
+/* note: Home Media query for smaller screens */
 @media only screen and (max-width: 600px) {
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  .Home-img {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items */
+    width: 100%; /* Take up full width */
+  }
+
+  .Home-img > img {
+    width: 100%; /* Take up full width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 0; /* Remove border-radius */
+    margin-top: 1em; /* Add spacing between items */
+  }
+
+  .home-content {
+    width: 80%; /* Take up full width */
+  }
+  .home-content > a > button {
+    margin-bottom: 15px;
+  }
+  .profile {
+    margin-left: 0px !important;
+    margin-top: 20px;
+  }
+}
+.skill-set {
+  /* margin-bottom: 440px; */
+  color: black;
+  text-align: center;
+  /* display: none; */
+  /* margin-bottom: 100px; */
+  margin-top: 30px;
+}
+/* Underline style starts here */
+.underline {
+  display: block;
+  width: 7%;
+  height: 4px;
+  background-color: #e09145;
+  margin-left: 24rem;
+}
+
+/* note: Media query for Ipad */
+/* Home Media query for smaller screens */
+@media only screen and (max-width: 900px) and (max-width: 600px) {
   html,
   body {
     width: 100%;
@@ -244,7 +295,7 @@ span {
 }
 /* underline style ends here */
 
-/* underline media query for big screens */
+/* note: underline media query for big screens */
 @media screen and (min-width: 1280px) {
   .underline {
     width: 3.5%;
@@ -253,7 +304,7 @@ span {
 }
 /* end  */
 
-/*underline media query for small screens* */
+/* note: underline media query for small screens* */
 @media screen and (max-width: 600px) {
   .underline {
     right: 15%;
@@ -303,8 +354,66 @@ h2 {
 p {
   font-size: 1em;
 }
+.ability {
+  padding: 0.5rem;
+background-color: #292c35;
+width: 30vw;
+margin: 0 auto;
+margin-bottom: 2rem;
+/* border-radius: 30px; */
+font-size: 10px;
+}
 
-/* skill Media query for smaller screens */
+.ability-content {
+  display: flex;
+  justify-content: space-between;
+  color:white
+}
+.education-heading {
+  text-align: center;
+}
+.education-heading {
+  text-align: center;
+  margin-top: 30px;
+
+}
+
+.education {
+  display: flex;
+  /* justify-content: space-between; */
+  /* margin: 20px 0; */
+  padding: 20px; /* Adjust padding for spacing */
+  width: 65vw;
+  margin: 0 auto;
+}
+
+.education-content {
+  flex: 1;
+  margin-right: 20px; /* Adjust the right margin for spacing */
+}
+
+.education-text {
+  flex: 2;
+
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 600px) {
+  .education {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    align-items: center; /* Center items */
+  }
+
+  .education-content,
+  .education-text {
+    margin-right: 0; /* Reset the right margin for smaller screens */
+    width: 100%; /* Take full width on smaller screens */
+    text-align: center;
+  }
+}
+
+
+/* note: skill Media query for smaller screens */
 @media screen and (max-width: 600px) {
   #skills {
     flex-direction: column; /* Stack the cards on top of each other */
@@ -316,7 +425,8 @@ p {
     width: 100%; /* Take full width on smaller screens */
   }
 }
-/* My interest style */
+
+/* note: My interest style */
 .my-intrests {
   text-align: center;
   padding: 80px 0;
@@ -417,6 +527,7 @@ p {
 
 .about p {
   color: white; /* Set the color of the paragraph text */
+  letter-spacing: 0.5px;
 }
 
 .about-img img {
@@ -466,15 +577,17 @@ p {
   /* This container includes the h1, p tag and form */
   display: flex;
   margin-top: 50px;
+  width: 95vw;
+  margin: 0 auto;
 }
 .column > h2 {
   font-size: 16px;
-  margin-left: 400px;
+  /* margin-left: 400px; */
 }
 .column > p {
   font-size: 30px;
   font-weight: bold;
-  margin-left: 400px;
+  /* margin-left: 400px; */
 }
 
 /* Responsive styles: Adjust the layout for smaller screens.This is for the column and h1 and p tag */
@@ -482,11 +595,11 @@ p {
   .container {
     flex-direction: column;
   }
-
-  .column > h2,
-  .column > p {
-    margin-left: 0; /* Adjust margin for smaller screens */
-  }
+/* 
+  .column > h2, */
+  /* .column > p { */
+    /* margin-left: 0; */
+  /* } */
 
   /* Add any additional styles for smaller screens here */
 }
@@ -623,7 +736,7 @@ input[type="submit"] {
 @media screen and (max-width: 600px) {
   .footer {
     padding: 30px 5%; /* Adjust padding for smaller screens */
-    flex-direction: column; /* Stack columns on top of each other */
+    flex-direction: column;
   }
   .footer-2 input {
     width: 200px;

@@ -24,7 +24,9 @@ body {
 .hamburger-btn {
   display: none; /* Hide the button on larger screens */
   background: transparent;
-  border: none;
+  border: 0.1px solid white;
+  border-radius: 10px;
+  padding: 2px;
   cursor: pointer;
   margin-left: 13.8rem;
 }
@@ -37,6 +39,7 @@ body {
   margin: 5px 2px;
   transition: all 0.3s linear;
   transition: all 0.4s ease-in-out;
+  
 }
 
 /* end */

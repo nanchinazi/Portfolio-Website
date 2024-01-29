@@ -17,7 +17,6 @@ body {
   overflow-x: hidden;
 }
 
-/* .nav-head */
 .nav-head {
   display: flex;
 }
@@ -45,16 +44,11 @@ body {
 @media only screen and (max-width: 600px) {
   .nav-links {
     display: none; /* Hide the navigation links on smaller screens */
-    background-color: rgba(41, 44, 53, 0.9); /* Semi-transparent background */
+    background-color: none; /* Semi-transparent background */
     transition: background-color 0.3s ease-in-out;
   }
   .hamburger-btn.active .nav-links {
-    background-color: rgba(
-      41,
-      44,
-      53,
-      0.75
-    ); /* Slightly more transparent when active */
+    background-color: none; /* Slightly more transparent when active */
   }
   .hamburger-btn {
     display: block; /* Show the hamburger button on smaller screens */
@@ -71,7 +65,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #292c35;
+  background-color: #1c1c1c;
   color: aliceblue;
   padding: 15px 30px;
 }
@@ -140,7 +134,10 @@ body {
 
 .home {
   /* note: This home is includes the whole section*/
-  background-color: #292c35;
+  /* background-color: #292c35; */
+  background-image: url(img/background-image.jpg);
+  background-position: center;
+  background-size: cover;
   min-height: 40vh;
 }
 .Home-img {
@@ -330,7 +327,7 @@ span {
   width: 300px;
   /* border: 1px solid #e09145; */
   padding: 20px;
-  background: #292c35;
+  background: #1c1c1c;
   box-shadow: 0 4px 8px rgba(243, 234, 234, 0.3);
   /* border-radius: 20px; */
   text-align: center;
@@ -358,18 +355,23 @@ p {
 }
 .ability {
   padding: 0.5rem;
-background-color: #292c35;
+background-color: #1c1c1c;
 width: 30vw;
 margin: 0 auto;
 margin-bottom: 2rem;
 /* border-radius: 30px; */
 font-size: 10px;
 }
+.ability:hover {
+  background-color: #40444f;
+}
+
 
 .ability-content {
   display: flex;
   justify-content: space-between;
   color:white
+ 
 }
 .education-heading {
   text-align: center;
@@ -418,6 +420,11 @@ font-size: 10px;
     margin-right: 0; /* Reset the right margin for smaller screens */
     width: 100%; /* Take full width on smaller screens */
     text-align: center;
+    
+    
+  }
+  .education-text h1 {
+  font-size: 1.5rem;
   }
 }
 
@@ -496,7 +503,7 @@ font-size: 10px;
 
 /* About starts from here */
 .about {
-  background-color: #292c35;
+  background-color: #1c1c1c;
   display: flex;
   justify-content: space-around;
   padding: 40px;
@@ -636,6 +643,7 @@ font-size: 10px;
 form {
   display: flex;
   flex-direction: column;
+ 
 }
 
 label {
@@ -688,7 +696,7 @@ input[type="submit"] {
 /* Footer */
 .footer {
   display: flex;
-  background-color: #292c35;
+  background-color: #1c1c1c;
   padding: 50px 15%;
   color: white;
 }
